@@ -6,12 +6,12 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-    APP_NAME = "ooghenekaro/amazon"
+    APP_NAME = "rpsj123/amazon1"
     }
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/ooghenekaro/Amazon-clone-Dockerized.git'
+           git branch: 'main', url: 'https://github.com/rpsj123/Amazon1-clone-Dockerized.git'
             }
         }
         // run sonarqube test
