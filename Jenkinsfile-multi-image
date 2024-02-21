@@ -5,8 +5,8 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-    APP_NAME = "ooghenekaro/amazon"
+    DOCKERHUB_CREDENTIALS = credentials('rpsj123-dockerhub')
+    APP_NAME = "rpsj123/amazon1"
     }
     stages { 
         stage('SCM Checkout') {
@@ -16,16 +16,16 @@ pipeline {
       }
             
             steps{
-           git branch: 'main', url: 'https://github.com/ooghenekaro/Amazon-clone-Dockerized.git'
+           git branch: 'main', url: 'https://github.com/rpsj123/amazon1-clone-Dockerized.git'
             }
         }
         // run sonarqube test
-       // stage('Run Sonarqube') {
+       // stage('Run rpsj123') {
          //   environment {
-           //     scannerHome = tool 'ibt-sonarqube';
+           //     scannerHome = tool 'sairam work shop';
             //}
             //steps {
-              //withSonarQubeEnv(credentialsId: 'ibt-sonar', installationName: 'IBT sonarqube') {
+              //withSonarQubeEnv(credentialsId: 'ibt-sonar', installationName: 'sairam work shop') {
                 //sh "${scannerHome}/bin/sonar-scanner"
               //}
         //    }
