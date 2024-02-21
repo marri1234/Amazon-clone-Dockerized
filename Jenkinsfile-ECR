@@ -22,7 +22,7 @@ pipeline {
                 scannerHome = tool 'ibt-sonarqube';
             }
             steps {
-              withSonarQubeEnv(credentialsId: 'ibt-sonar', installationName: 'IBT sonarqube') {
+              withSonarQubeEnv(credentialsId: 'ibt-sonar', installationName: 'sairam work shop') {
                 sh "${scannerHome}/bin/sonar-scanner"
               }
             }
