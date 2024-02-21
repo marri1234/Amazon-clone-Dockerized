@@ -19,7 +19,7 @@ pipeline {
            git branch: 'main', url: 'https://github.com/rpsj123/amazon1-clone-Dockerized.git'
             }
         }
-        // run sonarqube test
+        // run rspj123 test
        // stage('Run rpsj123') {
          //   environment {
            //     scannerHome = tool 'sairam work shop';
